@@ -1,0 +1,92 @@
+Some Mathematical functions in Matlab:
+exp(b)  ln(b)  log10(b)   log2(b)  sqrt(b)   nthroot(b, n)   
+
+
+Matlab mathematical functions can act on scalars as well as vectors and matrices.
+
+
+In matlab, a vector that has a single row is called a row vecotr and a vector
+that has a single column is called a column vecotr. Row vector is entered like
+this vRow = [3, 2, 5, 4] and column vector is entered like this [3; 4; 3; 2]
+
+
+In matlab index of a vector is starts with 1,2,....,n. We can add elements to
+a vector like this v(6) = 5 if the vector has already 5 elements.
+
+
+To apply power to vectors use v.^n like v.^2
+
+
+To transform a RowVector to a columnVector and vise versa, use c = V';
+the resul is stored in a new variable, and the original vector is not changed.
+
+
+To create a sequence of N equally-spaced points use for example v = 2:0.2:3
+the start is 2 the end is 3 and the step is 0.2. The output is a vector conatianing
+the points.
+
+
+To create a sequence of spaced specified points use e.g. v = linespace(0, 3, 8)
+the start is 0, the end is 3, and the number of points is 8.
+
+
+to make a plot of two coordinates e.g. v1 and v2 are two vectors. To plot them
+use plot(x, y). You can specifiy the style of the line in the plot through 
+adding plot(x, y, 'm:s'). There are other styles like 'g--*' and 'x-'
+
+
+To add labels to out axes use: xlabel('x')  ylabel('y'). To add title use
+title('my plot') and to add legend use legend('y(t)').
+
+
+To create a matrix in matlab use [1st row; 2nd row; 3rd row].
+
+
+To extract an element of a matrix use M(3, 2). To extract multiple elements, use
+M9[2, 3], 2) to output the the 2nd and 3rd elements of the 2nd column.To extract
+many elements of a single column, use M(2:4, 2). To extract the entire column
+use M(:, 2).
+
+
+To get the length of a vector, use L1 = length(u). To get the dimensions of a 
+matrix, use S1 = size(M)
+
+
+We concatenate scalars like [1, 2, 3] horizontally or [1; 5; 3] vertically in 
+the form of a vector. In the same manner, we can concatenate matrices horizontally
+C = [A, B], and vertically C = [A; B]. But be carful with the dimensions.
+
+
+To perform matrix multiplication use A*B.
+
+
+Use & as AND operation, | as OR operation, and ~ as NOT operation. Not equal in
+matlab is ~=. The rest is the same as programming languages.
+
+
+To apply relational operations to vectors e.g. I = v < 0.005, to test the elements
+against 0.005. This returns a vector of 1's corresponding to the values > 0.005
+and 0's otherwise, then you can write r = v(I) to get these values easily.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
